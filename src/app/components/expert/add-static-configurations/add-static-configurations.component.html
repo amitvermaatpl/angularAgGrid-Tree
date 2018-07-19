@@ -1,0 +1,51 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Add Issuer Limit Percentage Per Rating
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="staticConfFormGroup">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="error-server model-label" *ngIf="rating.invalid && (rating.dirty || rating.touched) || ((rating.value).trim().length === 0)">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <p class="error_message">Please provide rating</p>
+              </div>
+              <div class="error-server model-label" *ngIf="percentage.invalid && (percentage.dirty || percentage.touched)  || ((percentage.value).trim().length === 0)">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <p class="error_message">Please provide percentage</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="model-label">Rating<span>*</span></label>
+                <input type="text" formControlName="rating" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="model-label">Percentage<span>*</span></label>
+                <input type="text" formControlName= "percentage" pattern="[0-9]+(\.[0-9]{0,2})?%?" class="form-control">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="addAction()" [disabled]="((rating.value).trim().length === 0 || (percentage.value).trim().length === 0) || percentage.invalid">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade in"></div>

@@ -1,0 +1,62 @@
+<div>
+  <div class="leftnav-top-block">
+  </div>
+</div>
+<div class="nav-links">
+  <div *ngIf ="personalportfolio">
+    <a routerLink="/requestassessment" [ngClass]="{'active':linkactive==='requestassessment'}">
+      Request Assessment
+    </a>
+    <a routerLink="/pastassessments" [ngClass]="{'active':linkactive==='pastassessments'}">
+      Past Assessments
+    </a>
+    <a routerLink="/simulateassessment" [ngClass]="{'active':linkactive==='simulateassessment'}">
+      Simulate Assessment
+    </a>
+    <a routerLink="/pastsimulations" [ngClass]="{'active':linkactive==='pastsimulations'}">
+      Past Simulations
+    </a>
+  </div>
+
+  <div *ngIf ="portfolioassessment">
+    <a routerLink="/liveassessment" [ngClass]="{'active':linkactive==='liveassessment'}">
+      Live Assessment
+    </a>
+    <a routerLink="/Simulateassessment" [ngClass]="{'active':linkactive==='Simulateassessment'}">
+      Simulate Assessment
+    </a>
+  </div>
+
+  <div *ngIf ="reports">
+    <a routerLink="/assessmentreport" [ngClass]="{'active':linkactive==='assessmentreport'}">
+      Assessment Report
+    </a>
+    <a routerLink="/datatransfertodisk" [ngClass]="{'active':linkactive==='datatransfertodisk'}">
+      Data Transfer to DISC
+    </a>
+  </div>
+
+  <div *ngIf ="configurations">
+    <a routerLink="/portfoliotree" [ngClass]="{'active':linkactive==='portfoliotree'}">
+      Portfolio Tree
+    </a>
+    <a routerLink="/ruledesign" [ngClass]="{'active':linkactive==='ruledesign'}">
+      Rule Design
+    </a>
+    <a routerLink="/ruleactivation" [ngClass]="{'active':linkactive==='ruleactivation'}">
+      Rule Activation
+    </a>
+    <a routerLink="/staticConfig" [ngClass]="{'active':linkactive==='staticconfig'}">
+      Static configurations
+    </a>
+    <a routerLink="/scheduleassessments" [ngClass]="{'active':linkactive==='scheduleassessments'}">
+      Schedule Assessments
+    </a>
+  </div>
+
+  <div *ngIf ="usersroles">
+    <a routerLink="/ledexpert" routerLinkActive="active">
+      Roles & Permissions
+    </a>
+  </div>
+</div>

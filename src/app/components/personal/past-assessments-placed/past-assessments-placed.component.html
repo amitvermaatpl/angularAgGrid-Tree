@@ -1,0 +1,57 @@
+<app-header
+  [personalportfolio] = "personalportfolio">
+</app-header>
+
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [personalportfolio] = "personalportfolio"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          Past Assessments
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="model-section">Search</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 form-group">
+        <label class="model-label">Assessment Id</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-4 form-group">
+        <label class="model-label">ISIN(s)</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 form-group">
+        <label class="model-label">Portfolio</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-4 form-group">
+        <label class="model-label">Type of Assessment<span>*</span></label>
+        <select class="form-control">
+          <option>Select Assessment Type</option>
+          <option>eligiliblity</option>
+          <option>limit</option>
+          <option>both</option>
+        </select>
+        <i class="fa fa-caret-down"></i>
+      </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-8 text-right">
+        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-secondary">Reset</button>
+      </div>
+    </div>
+    <div>table</div>
+  </div>
+</div>

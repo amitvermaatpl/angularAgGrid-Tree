@@ -1,0 +1,21 @@
+<div class="dropdown">
+  <div *ngIf="params.colDef.field==='assessmentreport'">
+    <div *ngIf="params.data.assessmentstatus ==='Completed'">
+      <a (click)="invokePastAssestmentMethod()">
+        <i data-toggle='tooltip' data-placement='right' title='View Assessment' class='fa fa-file-text-o' style='font-size: 18px;'></i>
+      </a>
+    </div>
+  </div>
+  <div *ngIf="params.colDef.field==='simulationreport'">
+    <a (click)="invokePastSimulationMethod()">
+      <i data-toggle='tooltip' data-placement='right' title='View Assessment' class='fa fa-file-text-o' style='font-size: 18px;'></i>
+    </a>
+  </div>
+  <div *ngIf="params.colDef.field==='stopschedule'">
+    <div>
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+        <i class="fa fa-ellipsis-v modal-title" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>

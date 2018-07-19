@@ -1,0 +1,139 @@
+<app-header
+  [configurations] = "configurations">
+</app-header>
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [configurations] = "configurations"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          Portfolio Tree
+        </h1>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+                <!-- Accordian-->
+            <div class="panel-group">
+        
+              <form>
+                <input #filter class="form-control" (keyup)="filterNodes(filter.value, tree)" placeholder="filter "/>
+              </form>
+
+              <div style="height: 800px; width: 500px; ">
+                <tree-root  #tree
+                    [nodes]="nodes"
+                    [options]="customTemplateStringOptions"
+                    [focused]="true"
+                    (event)="onEvent($event)"
+                    (initialized)="onInitialized(tree)">
+                  <ng-template #treeNodeTemplate let-node>
+                    <span title="{{node.data.subTitle}}">{{ node.data.name }}</span>
+                    <!--<span class="pull-right">{{ childrenCount(node) }}</span> -->
+                    <span class="pull-right" (click)="go($event)"><i class="fa fa-plus-circle icoplus" data-dismiss="modal" (click)=addchild()></i></span>
+                  </ng-template>
+                  <ng-template #loadingTemplate>Loading, please hold....</ng-template>
+                </tree-root>
+            </div>
+      <br>
+    </div>
+</div>
+        <div class="col-md-6">
+                  <div class="modal-content">
+                    <button type="button" class="close" (click)="close()" >&times;</button>
+                    <div class="modal-header">
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="modal-header-title">
+                             Portfolio Configuration Characteristics
+                            </div>      
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                            
+                              <div class="pull-right">
+                                <button type="button" class="btn btn-primary small" (click)="deactivatePortfolio()">Deactivate</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label class="model-label">Name</label>
+                                  <input type="text" value="Asset Backed Securities Purchase Programme" class="form-control" disabled/>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label class="model-label">Id</label>
+                                
+                  
+                                <input type="text" value="ABSPP" class="form-control" disabled/>
+                               
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="model-label">Parent Id</label>
+                                  
+                                    <input type="text" value="MPP" class="form-control" disabled/>
+                                 
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                              <label class="model-label">Description</label>
+                              <textarea class="form-control" disabled>Description: The ABSPP helps banks to diversify funding sources and simulates the issuance of new securities. 
+                              </textarea>
+                              
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6 form-group">
+                                  <label class="model-label">Status</label>
+                                  
+                                    <input type="text" value="Active" class="form-control" disabled/>
+                                 
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="model-label">RAR Portfolio Id</label>
+                                    
+                                      <input type="text" value="ABSPP" class="form-control" disabled/>
+                                   
+                                  </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6 form-group">
+                                  <label class="model-label">Valid From</label>
+                                  
+                                    <input type="text" value="21.11.2014" class="form-control" disabled/>
+                                  
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="model-label">Valid To</label>
+                                   
+                                      <input type="text"  value="31.12.2020" class="form-control" disabled/>
+                                   
+                                  </div>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" (click)="editPortfolio()">Edit</button>
+                      <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+                    </div>
+                  </div>
+               
+             
+            </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div id="sample" style="display:none">
+    <div id="myDiagramDiv" style="width: 100%; height: 550px"></div>
+  </div>
+</div>

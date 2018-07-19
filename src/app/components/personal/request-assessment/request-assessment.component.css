@@ -1,0 +1,33 @@
+.model-label{
+    margin-top: 10px;
+}
+
+.d-inline-block .fa-caret-down{
+  float: right;
+  margin-top: -28px;
+  margin-right: 10px;
+  pointer-events: none;
+  background-color: transparent;
+  color: #003299;
+  padding-right: 5px;
+  position: relative;
+}
+:host >>> .dropdown-menu{
+  left: 0px;
+}
+
+:host >>> .dropdown button{
+  width: auto !important;
+  min-width: 100% !important;
+  border: 1px solid #DCE1EF !important;
+  background-color: #FFFFFF !important;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: #152934 !important;
+  height: 42px !important;
+  padding: 6px 8px !important;
+}

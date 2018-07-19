@@ -1,0 +1,10 @@
+label {
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #152935;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.dropdown-menu{
+  left: 0 !important;
+}

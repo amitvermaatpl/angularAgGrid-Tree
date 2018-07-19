@@ -1,0 +1,7 @@
+[
+    { "assessmentid": "148", "requestdate": "02/01/2018","portfolio":"CBPP3","requester":"Levi Murray","isins":"XS1750842822","assessmenttype":"BOTH","assessmentstatus":"ST1"},
+    { "assessmentid": "323", "requestdate": "03/01/2018","portfolio":"CBPP3","requester":"Levi Murray","isins":"XS1800643543","assessmenttype":"BOTH","assessmentstatus":"ST3"},
+    { "assessmentid": "423", "requestdate": "04/01/2018","portfolio":"ABSPP","requester":"Verena Ludwig","isins":"DE000CA08SR0","assessmenttype":"LIMITS","assessmentstatus":"ST5"},
+    { "assessmentid": "638", "requestdate": "05/01/2018","portfolio":"PSPP","requester":"Frank Schmidt","isins":"IT0CA00RSHR0,IT0CA00..","assessmenttype":"ELIGIBILITY","assessmentstatus":"Not Started"}
+]
+

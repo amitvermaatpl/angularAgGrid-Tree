@@ -1,0 +1,128 @@
+<app-header
+  [usersroles] = "usersroles">
+</app-header>
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [usersroles] = "usersroles"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="left-innernav">
+    <div class="nav-links">
+      <div id="roleslist">
+        <a routerLink="/ledexpert" routerLinkActive="active">
+          LED Expert
+        </a>
+        <a>LED Analyst</a>
+        <a>LED Customer</a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          LED Expert
+        </h1>      
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div  class="success">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+          Uploaded successfully!
+        </div>    
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-brand-01">Role Description</h3>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="copytext">
+          This role has all analyst privileges as well as can also modify limits and eligibility 
+          rules and perform functional administration tasks on the platform.
+        </div>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          <div class="pull-right">
+            <button type="button" class="btn btn-primary small" data-dismiss="modal">Edit</button>
+            <button type="button" class="btn btn-primary small" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-secondary small" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>    
+      </div>
+    </div><br>
+    <div class="panel-group">
+      <div class="collapse-heading">
+        <div data-toggle="collapse" data-target="#demo1" class="collapsed">
+          <h2>Portfolio Assessment</h2>
+        </div>
+      </div>
+      <div id="demo1" class="collapse">
+        <div class="collapse-body">
+          <div class="row">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="collapse-heading">
+        <div data-toggle="collapse" data-target="#demo2" class="collapsed">
+          <h2>Reports</h2>
+        </div>
+      </div>
+      <div id="demo2" class="collapse in">
+        <div class="collapse-body">
+          <!-- <div class="collapse-body-container">
+            <div class="row">
+              <div class="col-md-12">
+                <tree-root [nodes]="nodes1" [options]="options"></tree-root>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="collapse-heading">
+        <div data-toggle="collapse" data-target="#demo3" class="collapsed">
+          <h2>Configurations</h2>
+        </div>
+      </div>
+      <div id="demo3" class="collapse">
+        <div class="collapse-body">
+          <div class="row">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="collapse-heading">
+        <div data-toggle="collapse" data-target="#demo4">
+          <h2>User Roles and Permissions</h2>
+        </div>
+      </div>
+      <div id="demo4" class="collapse in">
+        <div class="collapse-body">
+          <div class="collapse-body-container">
+            <div class="row">
+              <div class="col-md-12">
+                  <tree-root [nodes]="nodes2" [options]="options"></tree-root>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,189 @@
+/*Customized AG Grid CSS*/
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../src/assets/fonts/opensans-regular-webfont.ttf');
+  } 
+  @font-face {
+    font-family: 'fontawesomes';
+    src: url('../../src/assets/fonts/fontawesome-webfont.ttf') ;
+  } 
+  .ag-header{ 
+   color: #152935 !important;	
+   font-family: "OpenSans";	
+   font-size: 12px;	
+   font-weight: bold !important;	
+   letter-spacing: 1px;	
+   line-height: 17px;
+   box-sizing: border-box;	
+   border: unset !important;
+   background: #FFFFFF !important;	
+   box-shadow: 1px 1px 9px 4px #2C3D47;
+  }
+  .ag-header-viewport{
+    border-bottom: 1px solid #003299;
+  }
+  .ag-pinned-left-header{
+    border-bottom: 1px solid #003299;
+    padding-left: 9px;
+  }
+  .ag-cell {
+    font-family: "OpenSans";	
+    font-size: 14px;	
+    line-height: 32px;
+    padding:3px 0 0 9px !important;
+    word-wrap: wrap;
+  }
+  .ag-cell-focus{
+    color: #152935 !important;	
+    font-family: "OpenSans" !important;	
+    font-size: 14px !important;	
+    line-height: 33px !important;
+    outline: transparent !important;
+    border-bottom: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-right: transparent !important;
+    border-top: 0px solid transparent !important;
+  }
+  .ag-menu{
+    font-family: "OpenSans" !important;	
+    font-size: 14px !important;	
+    padding: 5px 0 !important;
+    text-align: left !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    border-radius: 4px !important;
+    color:#333 !important;
+    min-width: 135px !important;
+    margin: 8px 0 0 !important;
+    border: 1px solid #DFE3E6 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1) !important;
+
+  }
+  .ag-menu-list{
+    min-width:180px;
+  }
+  .ag-menu-option-active{
+    background-color: #003299 !important;
+    color: #FFFFFF !important;
+    min-width: 171px !important;
+  }
+  .ag-row-hover{
+    background-color: #CBD6EA !important;
+  }
+  .ag-row-selected{
+    border-top: 0.3px solid #003299 !important;
+    border-bottom: 0.3px solid #003299 !important;
+    border-left: 3px solid #003299 !important;
+    background-color: #C3CFE7 !important;
+  }
+  .ag-row-updated{
+    border: 1px solid #5AA700 !important;
+    background-color: #F7FBF2 !important;
+  }
+  .ag-column-select-column:first-child { 
+    display: none;
+  }
+  .ag-column-select-column{
+    font-family: "OpenSans" !important;	
+    font-size: 14px !important;
+  }	
+ /*  .ag-menu-column-select-wrapper{
+    width: 270px !important;
+  } */
+  .ag-floating-filter-input, .ag-filter-filter{
+    box-sizing: border-box;	
+    height: 24px !important;
+    border: 1px solid #DCE1EF;	
+    background-color: #FFFFFF;
+    font-family: "OpenSans";	
+    font-size: 14px;
+    font-weight: normal !important;
+  }
+  .ag-row-even{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+  }
+  .ag-row-odd{
+    background-color: #F0F3F6;
+    border: 1px solid transparent;
+  }
+  .ag-header-cell-menu-button {
+    padding-right: 11px !important;
+  }
+  .ag-floating-filter-body input{
+    width: 88% !important;
+  }
+  .ag-cell-no-focus {
+    border-right: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+  }
+  .ag-row-focus{
+    border: 0.2px solid #CBD6EA;
+  }
+  .ag-header-cell{
+    padding:0px 0px 5px 0px !important;
+    border-right: 1px solid #DFE3E6 !important;
+  }
+  .ag-header-cell-text {
+    padding: 8px 9px 0 9px !important;
+    overflow:visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    text-transform: uppercase !important;
+  }
+  .ag-floating-filter-input{
+    width:88% !important;
+  }
+  .ag-floating-filter-button {
+    padding-right: 10px;
+  }
+  .ag-filter-filter{
+    height: 25px !important;
+    border: 1px solid #DCE1EF;
+    background-color: #FFFFFF;
+    font-family: "OpenSans";
+    font-size: 14px !important;
+    color:#003299 !important;
+    font-weight: normal !important;
+  }
+  .ag-header-select-all {
+    padding-left: 12px !important;
+    padding-top: 7px !important;
+  }
+ .ag-selection-checkbox{
+    padding-left: 4px !important;
+  }
+  .ag-floating-filter-body {
+    margin: 0 8px;
+  }
+  /* .ag-filter-filter{
+    color: #DCE1EF;
+  } */
+  .fa-check-circle {
+    color: #009900;
+  }
+  .fa-clock-o {
+    color: #FF0000;
+  }
+  .ag-header-icon {
+    padding: 7px 0;
+  }
+  .ag-icon{
+    color:#b3b4b9;
+  }
+  .ag-root{
+    border: unset !important;
+  }
+  .ag-header-group-cell{
+    border-right:0px !important;
+    
+  }
+  .ag-fresh .ag-header-group-cell-with-group{
+    border-bottom: 1px solid #DFE3E6 !important;
+  }
+  /* .ag-menu-option:last-child{
+  display: none; 
+ }*/
+
+  

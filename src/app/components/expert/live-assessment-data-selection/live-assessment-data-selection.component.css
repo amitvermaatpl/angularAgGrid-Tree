@@ -1,0 +1,48 @@
+.table>tbody>tr>td.th {
+    vertical-align: top;
+    letter-spacing: 1px;
+    background-color: #FFFFFF;
+}
+.table .table{
+    margin-bottom: 0px;
+}
+
+.ui-steps .ui-steps-item {
+    width: 14%;
+}
+.ui-steps.steps-custom {
+    margin-bottom: 40px;
+}
+.ui-steps.steps-custom .ui-steps-item .ui-menuitem-link {
+    height: 2px;
+    padding: 0px;
+}
+.ui-steps.steps-custom .ui-steps-item .ui-steps-number {
+    background-color: #d9d9d9;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: -12px;
+    font-size: 8px;
+    width: 19px;
+    height: 19px;
+    color: #d9d9d9;
+    border: 2px solid #d9d9d9;
+}
+.ui-steps.steps-custom .ui-steps-item .ui-steps-title {
+    color: #152935;
+    font-size: 12px;
+    opacity: 0;
+}
+.ui-steps.steps-custom .ui-steps-item{
+    background-color: #d9d9d9;
+    border: none;
+    opacity: 1;
+}
+.ui-steps.steps-custom .ui-steps-item.ui-state-highlight .ui-steps-number {
+    background-color: #003299;
+    color: #003299;
+}
+.ui-steps.steps-custom .ui-steps-item.ui-state-highlight .ui-steps-title {
+    opacity: 1;
+}

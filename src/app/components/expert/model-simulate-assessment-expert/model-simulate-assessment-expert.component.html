@@ -1,0 +1,106 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Simulation Report for simulation Report Id SR05233
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="pull-right">
+            <button class="btn btn-primary small" data-dismiss="modal" type="button">Download</button>
+          </div>
+          <div class="col-md-6 form-inline">
+            <label class="model-label">Assessment date</label>&emsp;&emsp;
+            <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+          </div>
+        </div><br>
+        <table class="table table-striped module-table">
+          <thead>
+            <tr>
+              <th><h4>Portfolio Id</h4></th>
+              <th><h4>Portfolio Name</h4></th>
+              <th><h4>Status</h4></th>
+              <th><h4>Valid From</h4></th>
+              <th><h4>Valid To</h4></th>
+              <th><h4>Rar Portfolio Id</h4></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CBPP3</td>
+              <td>Third covered bond purchase Programme</td>
+              <td>Active</td>
+              <td>15/11/2015</td>
+              <td>31/12/2020</td>
+              <td>CBPP3</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-brand-01">Passed Instruments</h3>
+          </div>
+        </div><br>
+        <table class="table table-striped module-table">
+          <thead>
+            <tr>
+              <th><h4>ISIN</h4></th>
+              <th><h4>Issuer Name</h4></th>
+              <th><h4>Status</h4></th>
+              <th><h4>Eligible</h4></th>
+              <th><h4>Limits</h4></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XS1800643543</td>
+              <td>Natixis Structured Issuance SA</td>
+              <td>Passed</td>
+              <td>Yes</td>
+              <td>50.000.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-brand-01">Failed Instruments</h3>
+          </div>
+        </div><br>
+        <table class="table table-striped module-table">
+          <thead>
+            <tr>
+              <th><h4>ISIN</h4></th>
+              <th><h4>Issuer Name</h4></th>
+              <th><h4>Status</h4></th>
+              <th><h4>Eligible</h4></th>
+              <th><h4>Limits</h4></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DE182453FES43</td>
+              <td>Deustche Bank GmbH</td>
+              <td>Failed</td>
+              <td>No</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+<div class="modal-backdrop fade in"></div>

@@ -1,0 +1,5 @@
+[
+    { "assessmentid": "148", "requestdate": "02/01/2018","execution":"Request","portfolio":"CBPP3","isins":"XS1750842822","assessmenttype":"BOTH","results":"OK","assessmentreport":"View Assessment","data":"View Data"},
+    { "assessmentid": "323", "requestdate": "03/01/2018","execution":"Request","portfolio":"CBPP3","isins":"XS1800643543","assessmenttype":"BOTH","results":"OK","assessmentreport":"View Assessment","data":"View Data"},
+    { "assessmentid": "423", "requestdate": "04/01/2018","execution":"Scheduled","portfolio":"ABSPP","isins":"DE000CA08SR0","assessmenttype":"LIMITS","results":"NOK","assessmentreport":"View Assessment","data":"View Data"}
+]

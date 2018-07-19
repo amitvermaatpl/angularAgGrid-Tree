@@ -1,0 +1,40 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" (click)="close()" tabindex="4">&times;</button>
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="modal-header-title">
+                  Edit Rule Step
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="editRuleSetForm">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="error-server model-label" *ngIf="ruleContent.invalid && (ruleContent.dirty || ruleContent.touched) || (ruleContent.trim().length === 0)">
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <p class="error_message">{{error_msg}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <label class="model-label">Rule Step Logic<span>*</span></label>
+                    <textarea formControlName="ruleContent" tabindex="1" class="form-control" [(ngModel)]="ruleContent"></textarea>
+                </div>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" tabindex="2" (click)="saveRuleStep()" [disabled]="!editRuleSetForm.valid || (ruleContent.trim().length === 0)">Save</button>
+          <button type="button" class="btn btn-secondary" tabindex="3" (click)="close()" >Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade in"></div>
+  

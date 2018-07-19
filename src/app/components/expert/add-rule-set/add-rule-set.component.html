@@ -1,0 +1,62 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" tabindex="6" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Add Rule Set
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addRuleSetForm">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="error-server model-label" *ngIf="((name.invalid && (name.dirty || name.touched)) || ((name.value).trim().length === 0))">
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <p class="error_message">{{error_msg}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="model-label">Name<span>*</span></label>
+                   <!-- <select class="form-control" tabindex="2006">
+                      <option>Rule Set A</option>
+                    </select>
+                    <i class="fa fa-caret-down"></i> -->
+                    <input type="text" tabindex="1" maxlength="50" required pattern="[-_.a-zA-Z0-9\s+][\s+/A-Za-z0-9._-]*"  formControlName="name" class="form-control" >
+
+                  </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label class="model-label">Mode</label>
+                    <select class="form-control" tabindex="2" formControlName="rulesetMode">
+                      <option>Testing</option>
+                    </select>
+                    <i class="fa fa-caret-down"></i>
+                  </div>
+              </div>
+
+          </div>
+          <div class="row">
+              <div class="col-md-12 form-group">
+                  <label class="model-label">Description</label>
+                  <textarea class="form-control" tabindex="3" formControlName="rulesetDesc"></textarea>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" tabindex="4" (click)="save()" [disabled]="!addRuleSetForm.valid || ((name.value).trim().length === 0)">Save</button>
+        <button type="button" class="btn btn-secondary" tabindex="5" (click)="close()" >Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade in"></div>

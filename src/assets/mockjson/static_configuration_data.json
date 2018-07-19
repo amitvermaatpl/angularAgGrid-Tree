@@ -1,0 +1,8 @@
+[
+    { "ratingid": "AAA", "percentageid": "20.00%","validfromid":"02/01/2018","validtoid":"02/07/2018","statusid":"Completed" },
+    { "ratingid": "AA", "percentageid": "20.00%","validfromid":"02/01/2018","validtoid":"02/07/2018","statusid":"Completed" },
+    { "ratingid": "A", "percentageid": "0.00%","validfromid":"02/01/2018","validtoid":"02/08/2018","statusid":"Pending" },
+    { "ratingid": "BBB", "percentageid": "50.00%","validfromid":"02/01/2018","validtoid":"02/08/2018","statusid":"Completed" },
+    { "ratingid": "BB", "percentageid": "40.00%","validfromid":"02/01/2018","validtoid":"02/07/2018","statusid":"Completed"}
+]
+

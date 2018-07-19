@@ -1,0 +1,45 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Edit Issuer Limit Percentage Per Rating
+              </div>      
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="editStaticConfFormGroup">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="error-server model-label" *ngIf="!editStaticConfFormGroup.valid || (trim(percentage).length === 0)">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <p class="error_message">{{error_msg}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <div class="row">
+                  <div class="form-group">
+                    <label class="model-label">Percentage<span>*</span></label>
+                    <input type="text" formControlName= "percentage" pattern="[0-9]+(\.[0-9]{0,2})?%?"  class="form-control" [(ngModel)]="percentage">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="editAction()" [disabled]="!editStaticConfFormGroup.valid || (trim(percentage).length === 0)">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade in"></div>

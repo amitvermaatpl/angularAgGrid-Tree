@@ -1,0 +1,141 @@
+:host >>> canvas{
+    outline: none;
+}
+
+
+.left-innernav{
+    width: 200px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #DFE3E6;
+    float: left;
+    min-height: 768px;
+    left: 200px;
+    height: 100% !important;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.nav-links{
+    margin-top: 32px;
+}
+.nav-links a{
+    display: block;
+    color:#152935;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid #DFE3E6;
+    border-left:4px solid #FFFFFF;
+    text-decoration: none;
+    cursor: default;
+}
+.nav-links a.active{
+    /* border-left:4px solid #003299!important; */
+    /* background-color: #DCE1EF!important; */
+    color: #003299!important;
+    font-weight: bold!important;
+}
+.nav-links a:hover{
+    color: #328DD2;
+}
+
+:host >>> tree-viewport{
+    overflow: hidden !important;
+}
+:host >>> tree-node-wrapper tree-node-content span{
+    color: #152934;
+    font-size: 14px;
+    font-weight: 700;
+}
+:host >>> tree-node-children tree-node-content span{
+    color: #152934;
+    font-size: 14px;
+    font-weight: 400;
+}
+:host >>> .node-wrapper {
+    padding: 4px 0px !important;
+    margin-top: 7px;
+}
+:host >>> tree-node-children .node-wrapper {
+    margin-top: 0px;
+}
+:host >>>.node-content-wrapper-active, 
+:host >>>.node-content-wrapper-focused, 
+:host >>>.node-content-wrapper:hover{
+    background-color: unset;
+    box-shadow:unset;
+}
+.collapse-heading{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #DFE3E6;
+    background-color: #fff;
+    padding-left: 20px; 
+    cursor: pointer;
+}
+.collapse-heading h2{
+    margin-left:25px; font-size: 14px !important; z-index: 0!important
+}
+.panel .panel{ border: none !important}
+.collapse-heading [data-toggle="collapse"] h2:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\E259";
+    position: relative;
+    color: #003299;
+    font-size: 14px;
+    line-height: 22px;
+    left: -25px;
+    top: calc(50% - 10px);
+}
+.collapse-heading [data-toggle="collapse"].collapsed h2:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\E260";
+    position: relative;
+    color: #003299;
+    font-size: 14px;
+    line-height: 22px;
+    left: -25px;
+    top: calc(50% - 10px);
+}
+.collapse-body{
+    /*bordee: 1px solid #DFE3E6;*/
+    background-color: #FFFFFF; margin-bottom: -10px !important
+}
+
+.collapse-body-container .collapse-heading {
+    padding-left: 50px !important;
+}
+.no-border{border:none!important}
+.collapse-body-container .collapse-heading .padding{
+    padding-left: 100px !important;
+}
+.padding2{
+    padding-left: 50px !important;
+}
+.secondlastchild{
+    padding-left:150px; padding-bottom: 15px!important
+ }
+ .secondlastchild div{
+    line-height: 35px; margin: 0!important; font-size: 14px!important
+ }
+.lastchild{
+   padding-left:180px;
+}
+.lastchild div{
+    line-height: 35px; margin: 0!important; font-size: 14px!important
+ }
+.panel-group{
+    margin-top:0 !important; padding:0px !important;
+}
+.pad{
+    padding-left: 12px !important
+}
+.icoplus{
+   float: right; cursor: pointer; z-index: 9999!important; font-size: 14px
+}
+.modal-content {
+    min-height:740px
+}
+
+:host >>> .node-content-wrapper{
+    width:100% !important;
+}

@@ -1,0 +1,56 @@
+<app-header
+  [configurations] = "configurations">
+</app-header>
+
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [configurations] = "configurations"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          Static configurations
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div  class="success">
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+          Uploaded successfully
+        </div>    
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-result-text desc">
+          <div class="pull-right">
+            <button type="button" class="btn btn-primary small" data-dismiss="modal">Export CSV</button>
+          </div>
+          5 Records Found
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive table-striped module-table">
+      <div>
+        <ag-grid-angular 
+          style="width: auto; height: 300px;" 
+          class="ag-fresh"
+          [enableSorting]="true"
+          [enableFilter]="true"
+          [floatingFilter]="true"
+          [rowData]="rowData" 
+          [columnDefs]="columnDefs"
+          [rowHeight] = "40"
+          [headerHeight] = "50"
+          [suppressMenuHide]="true"
+          [enableColResize]="true"
+          [suppressRowClickSelection]="true"
+        >
+        </ag-grid-angular>
+      </div>
+  </div>
+</div>

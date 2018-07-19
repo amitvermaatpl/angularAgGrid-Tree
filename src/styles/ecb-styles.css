@@ -1,0 +1,288 @@
+body{
+    background-color: #F5F7FA;
+}
+.no-padding{
+    padding:0px!important;
+}
+.no-margin{
+    margin:0px!important;
+}
+.logo_ecb{
+  background-image:url(../assets/images/ecb-logo.png);
+  width:81px;
+  height:41px;
+  margin-left:22px;
+  margin-top: 3px;
+}
+
+/*tables*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td,
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border: none;
+}
+.table > thead{
+    border-bottom: 1px solid #003299;
+}
+.module-table{
+    border: 1px solid #DCE1EF;
+}
+.table>thead>tr>th{
+    vertical-align: top;
+    letter-spacing: 1px;
+    background-color: #FFFFFF;
+}
+/*tables*/
+
+
+
+.model-section{
+    line-height: 18px;
+    margin-bottom: 9px;
+}
+.model-label{
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+.model-label span{
+    color: #003299;
+}
+.module-container{
+    padding:0px 49px;
+}
+.module-header-title{
+    margin: 29px 0px 16px;
+}
+.search-result-text{
+    line-height: 42px;
+    border: 1px solid #DFE3E6;
+    background-color: #FFFFFF;
+    padding-left: 16px;
+    padding-right: 20px;
+    border-bottom: unset;
+}
+
+/* Model Box */
+.modal-dialog{
+    margin: 15px auto;
+}
+.modal-content{
+    border-radius: 0;
+    border: none;
+    border-top:4px solid #003299;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.1);
+    overflow-y:auto;
+    max-height: 95vh;
+}
+.modal-header{
+    padding:47px 31px 17px 48px;
+    border: none;
+}
+.modal-body{
+    padding:8px 50px 25px 50px;
+    height: auto !important;
+    max-height: 90vh;
+    padding-bottom: 5px !important
+}
+.modal-footer{
+    padding: 24px 31px 24px 48px;
+    background-color: #F0F3F6;
+    border-top: transparent;
+}
+.modal-content .close{
+    margin: 15px 15px 0 0;
+    font-size: 16px;
+}
+
+.error-server {
+    margin-top:-8px;
+    border: 1px solid #E71D32;
+    border-left: 5px solid #E71D32;
+    padding: 10px 20px 12px 49px;
+    background-color: #fef4f5;
+    margin-bottom: 16px;
+}
+.error-server i{
+    position: absolute;
+    font-size: 16px;
+    color: #DE0026;
+    left:37px
+}
+.error-text{
+    font-size: 12px;
+    color: #DE0026;
+    line-height: 17px;
+    padding-left:18px;    /* needs to be changed probably*/
+}
+.error-text i{
+    font-size: 16px;
+    color: #DE0026;
+    margin-top:10px;
+}
+.success {
+    position: relative;
+    margin-top:1px;
+    outline: 1px solid #5AA700;
+    border-left: 5px solid #5AA700;
+    padding: 11px 0px 10px 49px;
+    background-color: #f8fbf2;
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.success i{
+    position: absolute;
+    font-size: 16px;
+    color: #5AA700;
+    left:22px;
+}
+.warning {
+    position: relative;
+    margin-top:1px;
+    outline: 1px solid #EFC100;
+    border-left: 5px solid #EFC100;
+    padding: 11px 0px 10px 49px;
+    background-color: #f8fbf2;
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.warning i{
+    position: absolute;
+    font-size: 16px;
+    color: #EFC100;
+    left:22px;
+}
+/* Model Box */
+
+/* Styles for Metadata Page */
+.wrapper-with-leftnav{
+    padding-left:200px;
+    padding-right:0px;
+}
+app-leftnav{
+    left:0px;
+    height:100% !important;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.modal-body.view{
+    max-height: none;
+}
+.modal-body.view textarea{
+    resize: none;
+}
+/* Styles for Metadata Page */
+
+/* Style for File Upload */
+.upload-file-container{
+    background-color: #F5F7FA;
+    box-shadow: unset !important;
+    margin-bottom: 22px;
+}
+.upload-file-header{
+    position: relative;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px 0 15px;
+}
+.upload-file-header .model-label{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #152934;
+}
+.upload-file-header .fileUpload{
+    line-height: 32px;
+    height: 32px;
+    margin-top: 14px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 14px;
+    width:82px;
+    height:32px;
+    right: 35px;
+    font-size: 0px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.upload-file-details{
+    padding: 12px 20px 12px 15px;
+    border-top: 1px solid #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #152934;
+}
+.upload-file-details .fa-trash-o{
+    cursor: pointer;
+}
+/* Style for File Upload */
+
+.eye-icon{
+    float: right;
+    margin-top: -28px;
+    margin-right: 10px;
+}
+
+/* Filter Panel Classes */
+.panel-group .panel{
+    border-radius: 0px !important;
+    box-shadow: none;
+    border: 1px solid #E2E8F2;
+}
+.panel-group hr{
+    border-color:#ccc;
+    width:auto;
+    margin-bottom:10px !important;
+    margin-top:8px !important
+}
+.panel-group .button-margin-top button{
+    margin-top:25px !important;
+}
+.panel-title{
+    color:#151934;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:25px
+}
+.panel-heading {
+    position: relative;
+    cursor:pointer !important;
+    background-color:#DCE1EF !important;
+    border-radius: 0px;
+}
+.panel-heading[data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    position: absolute;
+    color: #003299;
+    font-size: 14px;
+    line-height: 22px;
+    left: 15px;
+    top: calc(50% - 10px);
+}
+.panel-heading[data-toggle="collapse"].collapsed:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform:    rotate(180deg);
+    -ms-transform:     rotate(180deg);
+    -o-transform:      rotate(180deg);
+    transform:         rotate(180deg);
+}
+#collapseOne{
+    background-color:#F0F3F6;
+}
+.icon-cal{
+    font-size:16px;
+    margin-top:34px;
+    color:#003299;
+}
+.glyphicon-eye-open:before{
+    cursor: pointer;
+}

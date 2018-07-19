@@ -1,0 +1,87 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+        <div class="modal-dialog">
+<div class="modal-content">
+                    <button type="button" class="close" (click)="close()" >&times;</button>
+                    <div class="modal-header">
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="modal-header-title">
+                             Add Child-Portfolio
+                            </div>      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <form [formGroup]="addChildPortfolioForm">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label class="model-label">Name<span>*</span></label>
+                                  <input type="text" formControlName="name" class="form-control" />
+                              </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6 form-group">
+                                        <label class="model-label">Portfolio-Code<span>*</span></label>                  
+                                        <input type="text" formControlName="portfolioCode" class="form-control" />                               
+                                </div>
+                                <div class="col-md-6">
+                                        <label class="model-label">Parent Id<span>*</span></label>                                  
+                                        <input type="text" formControlName="parentId" class="form-control" />                                 
+                                </div>
+                            <!-- <div class="col-md-6 form-group">
+                                <label class="model-label">Id<span>*</span></label>                  
+                                <input type="text" formControlName="id" class="form-control" />                               
+                            </div>
+                            <div class="col-md-6">
+                                <label class="model-label">Parent Id<span>*</span></label>                                  
+                                <input type="text" formControlName="parentId" class="form-control" />                                 
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                              <label class="model-label">Description<span>*</span></label>
+                              <textarea class="form-control" formControlName="description" ></textarea>
+                              
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label class="model-label">Status</label>
+                                    <select class="form-control" required [(ngModel)]='statusSelected' >
+                                        <option *ngFor='let status of statusTypes' [value]="status">{{status}}</option>
+                                    </select>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                              <!-- <div class="col-md-6 form-group">
+                                  <label class="model-label">Status<span>*</span></label>                                  
+                                  <input type="text" formControlName="active" class="form-control" />                                 
+                                </div> -->
+                                <div class="col-md-6">
+                                    <label class="model-label">RAR Portfolio Id<span>*</span></label>                                    
+                                    <input type="text" formControlName="rarId" class="form-control" />                                   
+                                  </div>
+                          </div>
+                          <!-- <div class="row">
+                              <div class="col-md-6 form-group">
+                                  <label class="model-label">Valid From<span>*</span></label>
+                                  
+                                    <input type="text" formControlName="validFrom" class="form-control" />
+                                  
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="model-label">Valid To<span>*</span></label>
+                                   
+                                      <input type="text" formControlName="validTo" class="form-control" />
+                                   
+                                  </div>
+                          </div> -->
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+                      <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-backdrop fade in"></div>

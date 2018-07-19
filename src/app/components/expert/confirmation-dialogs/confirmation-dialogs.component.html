@@ -1,0 +1,30 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" (click)="close()" tabindex="4">&times;</button>
+        <div class="modal-header">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="modal-header-title">
+                    <h2 class="error_message">{{title}}</h2>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div class="modal-body">
+          <br/>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="error_message" style="font-size: medium">{{message}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" tabindex="2" (click)="confirm()" >Yes</button>
+          <button type="button" class="btn btn-secondary" tabindex="3" (click)="cancel()" >No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade in"></div>
+  

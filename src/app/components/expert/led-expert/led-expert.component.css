@@ -1,0 +1,111 @@
+.wrapper-with-leftnav {
+    padding-left: 400px !important;
+}
+.left-innernav{
+    width: 200px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #DFE3E6;
+    float: left;
+    min-height: 768px;
+    left: 200px;
+    height: 100% !important;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.nav-links{
+    margin-top: 32px;
+}
+.nav-links a{
+    display: block;
+    color:#152935;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid #DFE3E6;
+    border-left:4px solid #FFFFFF;
+    text-decoration: none;
+    cursor: default;
+}
+.nav-links a.active{
+    /* border-left:4px solid #003299!important; */
+    /* background-color: #DCE1EF!important; */
+    color: #003299!important;
+    font-weight: bold!important;
+}
+.nav-links a:hover{
+    color: #328DD2;
+}
+
+:host >>> tree-viewport{
+    overflow: hidden !important;
+}
+:host >>> tree-node-wrapper tree-node-content span{
+    color: #152934;
+    font-size: 14px;
+    font-weight: 700;
+}
+:host >>> tree-node-children tree-node-content span{
+    color: #152934;
+    font-size: 14px;
+    font-weight: 400;
+}
+:host >>> .node-wrapper {
+    padding: 4px 0px !important;
+    margin-top: 7px;
+}
+:host >>> tree-node-children .node-wrapper {
+    margin-top: 0px;
+}
+:host >>>.node-content-wrapper-active, 
+:host >>>.node-content-wrapper-focused, 
+:host >>>.node-content-wrapper:hover{
+    background-color: unset;
+    box-shadow:unset;
+}
+:host >>>.toggle-children-wrapper{
+    display: none !important; /* to hide expand icon */
+}
+.collapse-heading{
+    height: 58px;
+    line-height: 58px;
+    border: 1px solid #DFE3E6;
+    /* background-color: #FFFFFF; */
+    background-color: #DCE1EF;
+    padding-left: 20px; 
+    cursor: pointer;
+}
+.collapse-heading h2{
+    margin-left:25px;
+}
+.collapse-heading [data-toggle="collapse"] h2:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\E260";
+    position: relative;
+    color: #003299;
+    font-size: 14px;
+    line-height: 22px;
+    left: -25px;
+    top: calc(50% - 10px);
+}
+.collapse-heading [data-toggle="collapse"].collapsed h2:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\E259";
+    position: relative;
+    color: #003299;
+    font-size: 14px;
+    line-height: 22px;
+    left: -25px;
+    top: calc(50% - 10px);
+}
+.collapse-body{
+    border: 1px solid #DFE3E6;
+    border-top: unset;
+    background-color: #FFFFFF;
+}
+/* .collapse-body-top{
+    background-color: #F0F3F6;
+    padding: 17px 54px 19px 62px;
+} */
+.collapse-body-container{
+    padding: 17px 54px 19px 62px;    
+}

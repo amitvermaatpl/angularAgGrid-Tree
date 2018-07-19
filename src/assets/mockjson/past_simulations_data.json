@@ -1,0 +1,6 @@
+[
+    { "simulationid": "SR002148", "simulationdate": "02/01/2018","portfolio":"CBPP3","isins":"XS1750842822","assessmenttype":"BOTH","result":"OK","assessmentreport":"View Assessment" },
+    { "simulationid": "SR002323", "simulationdate": "03/01/2018","portfolio":"CBPP3","isins":"XS1800643543","assessmenttype":"BOTH","result":"OK","assessmentreport":"View Assessment" },
+    { "simulationid": "SR002423", "simulationdate": "04/01/2018","portfolio":"ABSPP","isins":"DE000CA08SR0","assessmenttype":"LIMITS","result":"NOK","assessmentreport":"View Assessment" },
+    { "simulationid": "SR002638", "simulationdate": "05/01/2018","portfolio":"PSPP","isins":"IT0CA00RSHR0,IT0CA00..","assessmenttype":"ELIGIBILITY","result":"OK","assessmentreport":"View Assessment" }
+]

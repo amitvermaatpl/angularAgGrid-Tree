@@ -1,0 +1,6 @@
+[
+    { "assessmentid": "148", "portfolio":"CBPP3","isins":"All","assessmenttype":"BOTH","frequency":"Every Monday","validfrom":"01/01/2018","validto":"31/12/2018","nextrun":"18/06/2018" },
+    { "assessmentid": "323", "portfolio":"CBPP3","isins":"All","assessmenttype":"BOTH","frequency":"Every Monday","validfrom":"01/01/2018","validto":"31/12/2018","nextrun":"18/06/2018"},
+    { "assessmentid": "423", "portfolio":"ABSPP","isins":"All","assessmenttype":"LIMITS","frequency":"1st of Month","validfrom":"01/01/2018","validto":"31/12/2018","nextrun":"01/07/2018"}
+]
+

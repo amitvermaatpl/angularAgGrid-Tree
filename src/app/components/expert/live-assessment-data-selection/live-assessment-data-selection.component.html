@@ -1,0 +1,843 @@
+<app-header
+  [portfolioassessment] = "portfolioassessment">
+</app-header>
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [portfolioassessment] = "portfolioassessment"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          Live assessment for assessment id 148
+        </h1>
+      </div>
+    </div>
+    <br><br>
+    <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true" styleClass="steps-custom"></p-steps><br>
+
+    <div class="step1" *ngIf="isDataSelection">
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Bank</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Rule Id</h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th><h4>HEAD ENTITY</h4></th>
+            <th><h4>ELIGIBILITY TYPE</h4></th>
+            <th><h4>ELIGIBILITY VALID FROM</h4></th>
+            <th><h4>ELIGIBILITY VALID TO</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td>Natixis</td>
+            <td class="text-center">AAA</td>
+            <td class="text-center">01/01/2017</td>
+            <td class="text-center">20/12/2025</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="no-padding">
+              <table class="table table-striped module-table no-margin">
+                <thead>
+                  <tr>
+                    <th><h4>COLLATARAL TYPE</h4></th>
+                    <th><h4>COLLATARAL VALUE</h4></th>
+                    <th><h4>LIMIT VALUE</h4></th>
+                    <th><h4>LIMIT VALID FROM</h4></th>
+                    <th><h4>LIMIT VALID TO</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><i data-toggle="tooltip" data-placement="right" title="Value missing" class="fa fa-exclamation-triangle" style="font-size: 18px; color:#efc000;"></i></td>
+                    <td class="text-center"><i data-toggle="tooltip" data-placement="right" title="Value missing" class="fa fa-exclamation-triangle" style="font-size: 18px; color:#efc000;"></i></td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">01/01/2018</td>
+                    <td class="text-center">31/12/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="ActiveUpdateMarketData()">Trigger Market Data update</button>
+          <button type="button" class="btn btn-primary" (click)="ActiveValidateData()">Validate Data</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step2" *ngIf="isUpdateMarketData">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="success">
+            <i aria-hidden="true" class="fa fa-check-circle"></i>
+            BBG Data updated successfully
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Bank</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Rule Id</h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th><h4>HEAD ENTITY</h4></th>
+            <th><h4>ELIGIBILITY TYPE</h4></th>
+            <th><h4>ELIGIBILITY VALID FROM</h4></th>
+            <th><h4>ELIGIBILITY VALID TO</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td>Natixis</td>
+            <td class="text-center">AAA</td>
+            <td class="text-center">01/01/2017</td>
+            <td class="text-center">20/12/2025</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="no-padding">
+              <table class="table table-striped module-table no-margin">
+                <thead>
+                  <tr>
+                    <th class="chart-06"><h4>COLLATARAL TYPE</h4></th>
+                    <th class="chart-06"><h4>COLLATARAL VALUE</h4></th>
+                    <th><h4>LIMIT VALUE</h4></th>
+                    <th><h4>LIMIT VALID FROM</h4></th>
+                    <th><h4>LIMIT VALID TO</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blanket Liens</td>
+                    <td>450.000.000</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">01/01/2018</td>
+                    <td class="text-center">31/12/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="ActiveValidateData()">Validate Data</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step3" *ngIf="isValidateData">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="error-server model-label">
+            <i aria-hidden="true" class="fa fa-exclamation-circle"></i>
+            Limit value must be greater than zero
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Name</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Rule Id</h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th><h4>HEAD ENTITY</h4></th>
+            <th><h4>ELIGIBILITY TYPE</h4></th>
+            <th><h4>ELIGIBILITY VALID FROM</h4></th>
+            <th><h4>ELIGIBILITY VALID TO</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td>Natixis</td>
+            <td class="text-center">AAA</td>
+            <td class="text-center">01/01/2017</td>
+            <td class="text-center">20/12/2025</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="no-padding">
+              <table class="table table-striped module-table no-margin">
+                <thead>
+                  <tr>
+                    <th class="chart-06"><h4>COLLATARAL TYPE</h4></th>
+                    <th class="chart-06"><h4>COLLATARAL VALUE</h4></th>
+                    <th class="ui-error"><h4>LIMIT VALUE</h4></th>
+                    <th><h4>LIMIT VALID FROM</h4></th>
+                    <th><h4>LIMIT VALID TO</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blanket Liens</td>
+                    <td>450.000.000</td>
+                    <td class="ui-error-txt text-center">0</td>
+                    <td class="text-center">01/01/2018</td>
+                    <td class="text-center">31/12/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="ActiveEnrichData()">Edit Data</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step4" *ngIf="isEnrichData">
+      <div class="row" *ngIf="enrichDataSaveBtnclicked">
+        <div class="col-md-5">
+          <div class="warning">
+            <!-- <i aria-hidden="true" class="fa"></i> -->
+            Data Updated. Update is pending for validation
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Approve manual edit of data</h2>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Bank</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Rule Id</h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th><h4>HEAD ENTITY</h4></th>
+            <th><h4>ELIGIBILITY TYPE</h4></th>
+            <th><h4>ELIGIBILITY VALID FROM</h4></th>
+            <th><h4>ELIGIBILITY VALID TO</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td>Natixis</td>
+            <td class="text-center">AAA</td>
+            <td class="text-center">01/01/2017</td>
+            <td class="text-center">20/12/2025</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="no-padding">
+              <table class="table table-striped module-table no-margin">
+                <thead>
+                  <tr>
+                    <th><h4>COLLATARAL TYPE</h4></th>
+                    <th><h4>COLLATARAL VALUE</h4></th>
+                    <th class="chart-03"><h4>LIMIT VALUE</h4></th>
+                    <th><h4>LIMIT VALID FROM</h4></th>
+                    <th><h4>LIMIT VALID TO</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blanket Liens</td>
+                    <td>450.000.000</td>
+                    <td class="chart-03 text-center">50,000,000</td>
+                    <td class="text-center">01/01/2018</td>
+                    <td class="text-center">31/12/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button *ngIf="!enrichDataSaveBtnclicked" type="button" class="btn btn-primary" (click)="enrichDataSaveBtnclick()">Save</button>
+          <button *ngIf="!enrichDataSaveBtnclicked" type="button" class="btn btn-primary">Cancel</button>
+
+          <button *ngIf="enrichDataSaveBtnclicked" type="button" class="btn btn-primary" (click)="ActiveExecuteRule()">Approve</button>
+          <button *ngIf="enrichDataSaveBtnclicked" type="button" class="btn btn-primary">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step5" *ngIf="isExecuteRule">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="success">
+            <i aria-hidden="true" class="fa fa-check-circle"></i>
+            Data update approved successfully
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Bank</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Rule Id</h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th><h4>HEAD ENTITY</h4></th>
+            <th><h4>ELIGIBILITY TYPE</h4></th>
+            <th><h4>ELIGIBILITY VALID FROM</h4></th>
+            <th><h4>ELIGIBILITY VALID TO</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td>Natixis</td>
+            <td class="text-center">AAA</td>
+            <td class="text-center">01/01/2017</td>
+            <td class="text-center">20/12/2025</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="no-padding">
+              <table class="table table-striped module-table no-margin">
+                <thead>
+                  <tr>
+                    <th class="chart-06"><h4>COLLATARAL TYPE</h4></th>
+                    <th class="chart-06"><h4>COLLATARAL VALUE</h4></th>
+                    <th><h4>LIMIT VALUE</h4></th>
+                    <th><h4>LIMIT VALID FROM</h4></th>
+                    <th><h4>LIMIT VALID TO</h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blanket Liens</td>
+                    <td>450.000.000</td>
+                    <td class="text-center">50,000,000</td>
+                    <td class="text-center">01/01/2018</td>
+                    <td class="text-center">31/12/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="ActiveAssessmentResults()">Execute Rule</button>
+          <button type="button" class="btn btn-primary">Terminate Processing</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step6" *ngIf="isAssessmentResults">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="success">
+            <i aria-hidden="true" class="fa fa-check-circle"></i>
+            All instruments are validated
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays Bank</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-brand-01">Passed Instruments</h3>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th class="text-center"><h4>Status</h4></th>
+            <th class="text-center"><h4>Eligible</h4></th>
+            <th class="text-center"><h4>Limits</h4></th>
+            <th class="text-center"><h4>Validate</h4></th>
+            <th class="text-center"><h4>Details</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td class="text-center">Passed</td>
+            <td class="text-center">Yes</td>
+            <td class="text-center">50.000.000</td>
+            <td class="text-center">Validated</td>
+            <td class="text-center"><i class="fa fa-arrow-right text-brand-01"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-brand-01">Failed Instruments</h3>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th class="text-center"><h4>Status</h4></th>
+            <th class="text-center"><h4>Eligible</h4></th>
+            <th class="text-center"><h4>Limits</h4></th>
+            <th class="text-center"><h4>Validate</h4></th>
+            <th class="text-center"><h4>Details</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DE182453FES43</td>
+            <td>Deustche Bank GmbH</td>
+            <td class="text-center">Failed</td>
+            <td class="text-center">No</td>
+            <td class="text-center">-</td>
+            <td class="text-center">Validated</td>
+            <td class="text-center"><i class="fa fa-arrow-right text-brand-01"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="ActiveSendEmail()">Notify Assessment</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="step7" *ngIf="isSendEmail">
+      <div class="row" *ngIf="!sendMailBtn">
+        <div class="col-md-5">
+          <div class="success">
+            <i aria-hidden="true" class="fa fa-check-circle"></i>
+            Mail sent successfully
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label class="model-label">User</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="user" value="Frank Schmidt" disabled>
+        </div>
+        <div class="col-md-3">
+          <label class="model-label">Email id</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="email" value="Frank.Schmidt@ecb.europa.eu" disabled>
+        </div>
+        <div class="col-md-3">
+          <label class="model-label">CC Email id(s)	</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="ccemail" value="Lukas.hellmann@ecb.europa.eu" disabled>
+        </div>
+        <div class="col-md-3">
+          <label class="model-label">Assessment date</label>&emsp;&emsp;
+          <input type="text" class="form-control" name="assessmentdate" value="11/05/2018" disabled>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>Portfolio Id</h4></th>
+            <th><h4>Portfolio Name</h4></th>
+            <th><h4>Institution</h4></th>
+            <th><h4>Status</h4></th>
+            <th><h4>Valid From</h4></th>
+            <th><h4>Valid To</h4></th>
+            <th><h4>Rar Portfolio Id</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBPP3</td>
+            <td>Third covered bond purchase Programme</td>
+            <td>Barclays</td>
+            <td>Active</td>
+            <td>15/11/2015</td>
+            <td>31/12/2020</td>
+            <td>CBPP3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-brand-01">Passed Instruments</h3>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th class="text-center"><h4>Status</h4></th>
+            <th class="text-center"><h4>Eligible</h4></th>
+            <th class="text-center"><h4>Limits</h4></th>
+            <th class="text-center"><h4>Validate</h4></th>
+            <th class="text-center"><h4>Add</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XS1800643543</td>
+            <td>Natixis Structured Issuance SA</td>
+            <td class="text-center">Passed</td>
+            <td class="text-center">Yes</td>
+            <td class="text-center">50.000.000</td>
+            <td class="text-center">Validated</td>
+            <td class="text-center"><i class="fa fa-dot-circle-o text-brand-01"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-brand-01">Failed Instruments</h3>
+        </div>
+      </div><br>
+      <table class="table table-striped module-table">
+        <thead>
+          <tr>
+            <th><h4>ISIN</h4></th>
+            <th><h4>ISSUER NAME</h4></th>
+            <th class="text-center"><h4>Status</h4></th>
+            <th class="text-center"><h4>Eligible</h4></th>
+            <th class="text-center"><h4>Limits</h4></th>
+            <th class="text-center"><h4>Validate</h4></th>
+            <th class="text-center"><h4>Add</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DE182453FES43</td>
+            <td>Deustche Bank GmbH</td>
+            <td class="text-center">Failed</td>
+            <td class="text-center">No</td>
+            <td class="text-center">-</td>
+            <td class="text-center">Validated</td>
+            <td class="text-center"><i class="fa fa-dot-circle-o text-brand-01"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row" *ngIf="sendMailBtn">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary" (click)="SendEmail()">Send Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>

@@ -1,0 +1,741 @@
+/* Reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset css */
+
+body{
+    font-family: OpenSans;
+}
+/* Colors */
+.ui-warning{background-color:#EFC100!important}
+.ui-information{background-color:#328DD2!important}
+.ui-error{background-color:#E71D32!important}
+.ui-success{background-color:#5AA700!important}
+
+.ui-warning-txt{color:#EFC100!important}
+.ui-information-txt{color:#328DD2!important}
+.ui-error-txt{color:#E71D32!important}
+.ui-success-txt{color:#5AA700!important}
+
+.brand-01{background-color:#003299}
+.brand-02{background-color:#328DD2}
+.brand-03{background-color:#00B4A0}
+.text-brand-01{color:#003299 !important}
+
+.ui-01{background-color:#FFFFFF}
+.ui-02{background-color:#EFF3F6}
+.ui-03{background-color:#E6EAF5}
+.ui-04{background-color:#DCE1EF}
+.ui-05{background-color:#B5C3E2}
+.ui-06{background-color:#8E9AA6}
+.text-ui-01{color:#FFFFFF}
+.text-ui-02{color:#EFF3F6}
+.text-ui-03{color:#E6EAF5}
+.text-ui-04{color:#DCE1EF}
+.text-ui-05{color:#B5C3E2}
+.text-ui-06{color:#8E9AA6}
+
+.text-01{color:#152934}
+.text-02{color:#6D7A83}
+.text-03{color:#5A6872}
+
+.chart-01{background-color:#FFB401 !important;}
+.chart-02{background-color:#FF4A00 !important;}
+.chart-03{background-color:#64B802 !important;}
+.chart-04{background-color:#00B0E9 !important;}
+.chart-05{background-color:#007815 !important;}
+.chart-06{background-color:#8239C5 !important;}
+.chart-07{background-color:#5C5C5C !important;}
+.chart-08{background-color:#D9D9D9 !important;}
+
+/* Typo Page*/
+h1{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: #003299;
+}
+h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #152934;
+}
+h3{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #152934;
+}
+h4{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    color: #152934;
+    text-transform: uppercase;
+}
+.copytext{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #152934;
+}
+.desc{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color:#5A6872;
+}
+
+/* Typo Tables */
+.table>tbody>tr>td{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color:#152934;
+
+}
+.table-row.selected{
+    font-weight: 700;
+}
+.table-row.error{
+    color:#E71D32;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+    background-color: #FFFFFF;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+    background-color: #F6F6F6;
+}
+.table-striped>tbody>tr:hover{
+    background-color: #CBD6EA;
+}
+/*Typo - Model / Popup / Form */
+.modal-header-title{
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #152934;
+}
+.model-section{
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #003299;
+}
+.model-label{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #152934;
+}
+.model-label.inactive{
+    color:#89939A;
+}
+.model-hint{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* typo - Panel (Right Side) */
+.panel-header-main{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: capitalize;
+    color:#003299;
+}
+.panel-header{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: capitalize;
+    color:#152934;
+}
+.panel-label{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #152934;
+}
+.panel-text{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #152934;
+}
+
+/* Buttons */
+.btn-primary{
+    height: 40px;
+    border: none;
+    background-color:#003299;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    padding:0 17px;
+    margin-left:20px;
+}
+.btn-primary:hover{
+    background-color:#318ACE;
+}
+.btn-primary:focus{
+    padding:0 15px;
+    background-color:#318ACE;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #318ACE;
+    outline-color: #318ACE;
+}
+.btn-primary:disabled{
+    background-color:#B4C2E0;
+}
+.btn-primary.small{
+    height: 24px;
+    padding:0 21px;
+}
+.btn-primary.small:focus{
+    padding:0 19px;
+}
+.btn-secondary{
+    height: 40px;
+    border: 2px solid #003299;
+    background: #FFFFFF;
+    border-radius: 2px;
+    color:#003299;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    padding:0 15px 0 16px;
+    margin-left: 20px;
+}
+.btn-secondary:hover{
+    border-color:#318ACE;
+    color:#318ACE;
+}
+.btn-secondary:focus{
+    border-color:#318ACE;
+    color:#318ACE;
+}
+.btn-secondary:disabled{
+  border: 2px solid #FFFFFF;
+  background-color:#B4C2E0;
+  color: #FFFFFF;
+}
+.btn-secondary.small{
+  padding:0 19px;
+  height: 24px;
+}
+.btn-medium{
+  height: 32px;
+  border: none;
+  background-color:#003299;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding:0;
+}
+
+/* Drop Down Menu */
+.dropdown > a{
+  width: 24px;
+  padding: 3px 10px;
+  color: #003299;
+  border-radius: 2px;
+}
+.dropdown > a:hover{
+  width: 24px;
+  padding: 3px 10px;
+  color: #FFFFFF;
+  background: #318ACE;
+}
+.dropdown-menu{
+  min-width: 180px;
+  left: -105px;
+  margin: 8px 0 0;
+  border: 1px solid #DFE3E6;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+.dropdown ul.dropdown-menu:before {
+  content: "";
+  border-bottom: 14px solid #fff;
+  border-bottom-color: #ffffff;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  position: absolute;
+  top: -9px;
+  right: 12px;
+  z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 10px solid #DFE3E6;;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 9;
+}
+.dropdown-menu>li.menu-head{
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 20px;
+    line-height: 1.42857143;
+}
+.dropdown-menu>li>a{
+    color:#152934;
+    font-weight: 400;
+    font-family: 'OpenSans';
+    font-size: 14px;
+}
+.dropdown-menu>li.menu-head>a:hover{
+    color:#152934;
+    background-color: #FFFFFF;
+}
+.dropdown-menu>li>a:hover{
+    background-color:#003299;
+    color:#FFFFFF;
+}
+
+/*Date picker*/
+ .input-group input{
+    padding: 6px 8px;
+}
+.input-group-addon {
+    padding: 6px 6px;
+    border: 0 !important;
+    background-color: transparent !important;
+}
+.dateicon{
+    color:#003299;
+    cursor: pointer;
+}
+
+.icondisabled{
+    cursor: not-allowed;
+    color: rgba(140,155,165,0.3) !important;
+}
+
+.ngxmdp *{
+    font-family: OpenSans !important;
+    font-size: 12px;
+}
+.ngxmdp .selector{
+    border: 1px solid #DFE3E6!important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    padding: 25px!important;
+    background: #FFFFFF!important;
+    width:267px !important;
+    height: 265px !important;
+    border-radius: 0 !important;
+    margin-top: 6px !important;
+}
+.ngxmdp .selector:before {
+    content: "" !important;
+    border-bottom: 14px solid #fff !important;
+    border-bottom-color: #ffffff !important;
+    border-right: 14px solid transparent !important;
+    border-left: 14px solid transparent !important;
+    position: absolute !important;
+    top: -9px !important;
+    left: 12px !important;
+    z-index: 10 !important;
+}
+.ngxmdp .selector:after {
+    content: "" !important;
+    border-bottom: 10px solid #DFE3E6 !important;
+    border-right: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+    position: absolute !important;
+    top: -10px !important;
+    left: 16px !important;
+    z-index: 9 !important;
+}
+.ngxmdp .header{
+    background-color: #FFFFFF !important;
+    height: 18px !important;
+    margin-bottom: 20px !important;
+}
+.ngxmdp .icon-ngxmydpleft,.ngxmdp .icon-ngxmydpright{
+    display: none;
+}
+.ngxmdp .headerlabelbtn{
+    background: none !important;
+    color:#003299 !important;
+    font-size: 12px;
+    font-weight: bold;
+    height: 18px !important;
+}
+.ngxmdp .headermonthtxt, .ngxmdp .headeryeartxt{
+    height: 18px !important;
+}
+.ngxmdp .headermonthtxt{
+    text-align: left !important;
+}
+.ngxmdp .headeryeartxt{
+    text-align: right !important;
+}
+.ngxmdp .ngxmdpicon{
+    font-family: ngx-mydatepicker !important;
+}
+.ngxmdp .caltable{
+    font-size: 12px !important;
+}
+.ngxmdp .weekdaytitle{
+    font-weight: bold !important;
+    padding: 0px !important;
+    line-height: 19px !important;
+    padding-bottom: 15px !important;
+}
+.ngxmdp .weekdaytitle,
+.ngxmdp .daycell,
+.ngxmdp .monthcell,
+.ngxmdp .yearcell,
+.ngxmdp .yearchangebtncell,
+.ngxmdp .highlight{
+    background-color: inherit !important;
+    color: #152934 !important;
+    vertical-align: middle;
+}
+.ngxmdp .daycell:hover,
+.ngxmdp .monthcell:hover,
+.ngxmdp .yearcell:hover,
+.tablesingleday:hover
+.highlight{
+    color: #FFFFFF !important;
+    background-color: #328DD2 !important;
+}
+.ngxmdp .selectedday .datevalue,
+.ngxmdp .selectedmonth .monthvalue,
+.ngxmdp .selectedyear .yearvalue{
+    background-color: transparent !important;
+}
+.ngxmdp .selectedday,
+.ngxmdp .selectedmonth,
+.ngxmdp .selectedyear,
+.ngxmdp .selectedday .highlight{
+    color: #FFFFFF !important;
+    background-color: #003299 !important;
+    vertical-align: middle !important;
+}
+.ngxmdp .yearchangebtn{
+    background-color: inherit !important;
+    color: #152934 !important;
+}
+.ngxmdp .yearchangebtn:focus{
+   color: #152934 !important;
+}
+.ngxmdp .yearchangebtn:hover{
+    color: #152934 !important;
+ }
+ div.ngxmdp .disabled, div.ngxmdp .disabled:hover,
+ div.ngxmdp .disabled .prevmonth,
+ div.ngxmdp .disabled .highlight{
+    background-color:#e6eaf5!important;
+    color:#606E78 !important;
+ }
+ .ngxmdp .nextmonth, .ngxmdp .prevmonth{
+    color:#606E78 !important;
+ }
+ div.ngxmdp .dimday{
+     opacity: 1 !important;
+ }
+ /* Form Elemenets */
+.form-control {
+    border: 1px solid #DCE1EF;
+    background-color: #FFFFFF;
+    box-shadow: unset !important;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color:#152934;
+   /* padding-left:17px;*/
+    height: 42px;
+    padding: 6px 8px;  /*to make the same padding as for date picker fields*/
+}
+.form-control:focus{
+    border-color: #DCE1EF;
+    box-shadow: unset !important;
+}
+.form-control::-ms-clear {
+    display: none;
+}
+textarea.form-control{
+    height:130px;
+    resize: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#606E78;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color:#606E78;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color:#606E78;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color:#606E78;
+}
+.form-control[disabled]{
+    background-color: #E6EAF5;
+    border: none;
+    color: #738089;
+}
+.form-control[readonly] {
+    background-color: #E6EAF5;
+    border: none;
+}
+
+/* Dropdown */
+select.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+select.form-control::-ms-expand {
+    display: none;
+}
+select.form-control + i.fa {
+    float: right;
+    margin-top: -28px;
+    margin-right: 10px;
+    pointer-events: none;
+    background-color: transparent;
+    color:#003299;
+    padding-right: 5px;
+}
+select.form-control{
+    font-weight: 700;
+    padding-right: 40px;
+}
+select.form-control option{
+    background-color: #FFFFFF;
+    color: #152934;
+    font-weight: 400;
+}
+
+/* The checkbox-container */
+.checkbox-container {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #FFF;
+    border: 2px solid #8C9BA5;
+    border-radius: 2px;
+}
+.checkbox-container:hover input ~ .checkmark {
+    border: 2px solid #003299;
+}
+/* When the checkbox is checked*/
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #003299;
+    border: 2px solid #003299;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+    font-family: 'FontAwesome';
+    content: "\F00C";
+    color: #FFF;
+    font-size: 12px;
+    top: 2px;
+    left: 2px;
+    line-height: 1;
+}
+.checkbox-container input ~ .checkmark.disabled {
+    border: 2px solid  rgba(140,155,165,0.3);
+    background: #E6EAF5;
+    cursor: not-allowed;
+}
+
+/* Multi-Select Dropdown */
+
+.c-btn{
+    box-shadow: unset !important;
+    border-radius: unset !important;
+    border: 1px solid #DCE1EF !important;
+    height: 42px !important;
+    padding: 11px 6px 8px !important;
+    font-size: 14px !important;
+}
+
+/* Checkbox within the Multi-Select Dropdown*/
+.pure-checkbox input[type="checkbox"] + label:before{
+    border: 2px solid #8C9BA5 !important;
+    border-radius: 2px !important;
+    /* background-color: #FFF !important; */
+    }
+
+.pure-checkbox:hover{
+    background-color: transparent !important;
+    }
+
+.pure-checkbox:hover input[type="checkbox"] + label:before{
+    border: 2px solid #003299 !important;
+    }
+
+.pure-checkbox input[type="checkbox"]:checked + label:before{
+    background-color: #003299 !important;
+    border: 2px solid #003299 !important;
+    }
+
+.list-area{
+    box-shadow: unset !important;
+    border-radius: unset !important;
+    border: 1px solid #DCE1EF !important;
+    }
+
+    /* Pill for Multi-Select*/
+.selected-list .c-list .c-token{
+        background: #003299 !important;
+        border-radius: 45px !important;
+    }
+
+/*Radio Button*/
+.radio-container {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+}
+/* Create a custom radio button */
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #FFF;
+    border: 2px solid #8C9BA5;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .radio-checkmark {
+    border: 2px solid #003299;
+}
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radio-checkmark {
+    background-color: #FFF;
+    border: 2px solid #003299;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+}
+/* Style the indicator (dot/circle) */
+.radio-container .radio-checkmark:after {
+    top: 1px;
+	left: 1px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: #003299;
+}
+.radio-container .radio-checkmark.disabled:after {
+	background: #8C9BA5;
+}
+.radio-container input ~ .radio-checkmark.disabled{
+    border: 2px solid #8C9BA5;
+    cursor: not-allowed;
+}
+
+/*icons */
+.fa-trash-o{
+    height:16px;
+}
+/*icons */
+
+

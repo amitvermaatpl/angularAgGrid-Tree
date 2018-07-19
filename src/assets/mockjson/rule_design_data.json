@@ -1,0 +1,6 @@
+[
+    { "ruleStep": "1", "ruleContent": "xxxx","activeStatus":"Y","ruleSet":"Lorem Ipsum" },
+    { "ruleStep": "2", "ruleContent": "yyyy","activeStatus":"N","ruleSet":"Lorem Ipsum" },
+    { "ruleStep": "3", "ruleContent": "zzzz","activeStatus":"Y","ruleSet":"Lorem Ipsum" }
+]
+

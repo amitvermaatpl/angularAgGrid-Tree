@@ -1,0 +1,15 @@
+<div class="dropdown" *ngIf="editAllowed(params.data.status) ||  approveAllowed(params.data.status)">
+  <div>
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <i class="fa fa-ellipsis-v modal-title" aria-hidden="true"></i>
+      </a>
+  
+      <ul class="dropdown-menu" id="ellipsesdrop" >
+              <li><a href="" data-toggle="modal" (click)="editAction()" *ngIf="editAllowed(params.data.status)">Edit </a></li>
+              <li><a href="" data-toggle="modal" (click)="deleteAction()" *ngIf="deleteAllowed(params.data.status)">Delete</a></li>
+              <li><a  href="" data-toggle="modal" (click)="approveAction()" *ngIf="approveAllowed(params.data.status)">Approve</a></li>
+              <!--<li><a  href="" data-toggle="modal" (click)="approveDeleteAction()">Approve Deletion</a></li>-->
+              <li><a href="" data-toggle="modal" (click)="rejectAction()" *ngIf="rejectAllowed(params.data.status)">Reject</a></li>
+          </ul>
+  </div>        
+</div>

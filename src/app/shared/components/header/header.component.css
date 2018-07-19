@@ -1,0 +1,90 @@
+:host {
+	display: block;
+    height: 100px;
+}
+.logo_ecb{
+    float: left;
+}
+h2.title{
+    font-weight: 700;
+    color: #003299;
+    float: left;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+.ca-align-middle{
+	height: 50px;
+	margin-right: 5px;
+}
+.notification-icon{
+	float: left;
+    position: relative;
+}
+.ca-badge-notify{
+	background:#FF4A00;
+	position: absolute;
+	top: 10px;
+	right: 45px;
+	border-radius: 50%;
+    padding:2px 5px;
+    font-size: 10px;
+}
+.fa-envelope,.fa-question-circle, .fa-cog{
+    margin-top: 15px;
+    margin-right:35px;
+	float: left;
+    cursor: default;
+    color: #003299;
+}
+.fa-question-circle:hover, .fa-cog:hover{
+	color: #318ACE;
+}
+.divider-icon{
+	float: left;
+	height: 16px;
+	width: 2px;
+	border: 1px solid #DFE3E6;
+	margin-right:23px;
+	margin-top:15px;
+}
+.userlogin{
+    float: left;
+    margin-top: 13px;
+}
+.fa-user{
+	float: left;
+	margin-top: 15px;
+    color: #003299;
+}
+.userlogin-text{
+	font-size: 11px;
+    color: #152934;
+	font-weight: 700;
+	position: absolute;
+    right: 25px;
+    top: 36px;
+}
+.logout-text{
+	font-size: 11px;
+	margin-left: 10px;
+	line-height: 15px;
+	margin-right: 20px;
+    color: #003299;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-nav>li>a{
+	font-size: 14px;
+	color:#FFFFFF;
+	font-weight: 700;
+	padding: 14px 22px 18px;
+	line-height: 18px;
+	cursor: pointer;
+}
+.navbar-nav>li:hover>a{
+	color:#318ACE;
+}
+.navbar-nav>li.active>a{
+	color:#003299;
+	background-color: #DCE1EF;
+}

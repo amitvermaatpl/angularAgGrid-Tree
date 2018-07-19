@@ -1,0 +1,7 @@
+[
+    { "assessmentid": "148", "requestdate": "02/01/2018","portfolio":"CBPP3","isins":"XS1750842822","assessmenttype":"BOTH","assessmentstatus":"Completed","result":"OK","assessmentreport":"View Assessment","showassessmentreport":"show" },
+    { "assessmentid": "323", "requestdate": "03/01/2018","portfolio":"CBPP3","isins":"XS1800643543","assessmenttype":"BOTH","assessmentstatus":"Completed","result":"OK","assessmentreport":"View Assessment", "showassessmentreport":"show"},
+    { "assessmentid": "423", "requestdate": "04/01/2018","portfolio":"ABSPP","isins":"DE000CA08SR0","assessmenttype":"LIMITS","assessmentstatus":"Completed","result":"NOK","assessmentreport":"View Assessment", "showassessmentreport":"show" },
+    { "assessmentid": "638", "requestdate": "05/01/2018","portfolio":"PSPP","isins":"IT0CA00RSHR0,IT0CA00..","assessmenttype":"ELIGIBILITY","assessmentstatus":"Pending","result":"","assessmentreport":"View Assessment","showassessmentreport":"" }
+]
+

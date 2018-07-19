@@ -1,0 +1,67 @@
+<app-header
+  [personalportfolio] = "personalportfolio">
+</app-header>
+
+<div class="wrapper wrapper-with-leftnav">
+  <app-leftnav
+    [personalportfolio] = "personalportfolio"
+    [linkactive] = "linkactive">
+  </app-leftnav>
+  <div class="container-fluid module-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="module-header-title">
+          Simulate Assessment
+        </h1>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-4 form-group">
+        <label class="model-label">ISIN(s)<span>*</span></label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-4 form-group">
+        <label class="model-label">Portfolio<span>*</span></label>
+        <select class="form-control">
+          <option>Select Portfolio</option>
+          <option>FX</option>
+          <option>OF</option>
+          <option>ABSPP</option>
+          <option>PSPP</option>  
+          <option>CSPP</option>  
+          <option>CBPP</option>  
+        </select>
+        <i class="fa fa-caret-down"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 form-group">
+        <label class="model-label">Type of Assessment<span>*</span></label>
+        <select class="form-control">
+          <option>Select Assessment Type</option>
+          <option>eligiliblity</option>
+          <option>limit</option>
+          <option>both</option>
+        </select>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="col-md-4 form-group">
+        <label class="model-label">Assessment Date<span>*</span></label>
+        <div class="input-group">
+          <input class="form-control"  placeholder="DD/MM/YYYY" ngx-mydatepicker name="mydate"
+                  [(ngModel)]="model" [options]="myOptions" #dp="ngx-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+          <span class="input-group-addon">
+            <span (click)="dp.toggleCalendar()"><i class="fa fa-calendar-o dateicon"></i></span>
+          </span>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-8 text-right">
+        <button type="button" class="btn btn-primary" (click)=modelSimulateAssessment()>Simulate</button>
+        <button type="button" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

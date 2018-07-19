@@ -1,0 +1,80 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Portfolio Configuration Characteristics
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-right">
+              <button class="btn btn-primary small" data-dismiss="modal" type="button">Deactivate</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label class="model-label">Name</label>
+            <input type="text" class="form-control" readonly value="Asset Backed Securities purchase Programme">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">ID</label>
+            <input type="text" class="form-control" readonly value="ABSPP">
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">Parent Id</label>
+            <input type="text" class="form-control" readonly value="MPP">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label class="model-label">Description</label>
+            <textarea class="form-control" readonly>
+              Description: The ABSPP helps banks to diversify funding sources and simulates the issuance of new securities. Asset-backed securities can help banks to fulfil their main role: provideing credit to the real economy. For instance, securitising loans and selling them can provide banks with the necessary funds to provide new lending to the real economy. This will further ease funding and credit conditions and help the transmission of monetary policy.
+            </textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">Status</label>
+            <input type="text" class="form-control" readonly value="Active">
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">Parent or Child</label>
+            <input type="text" class="form-control" readonly value="Child">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">Valid From</label>
+            <input type="text" class="form-control" readonly value="21.11.2014">
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">Valid To</label>
+            <input type="text" class="form-control" readonly value="31.12.2020">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">RAR Portfolio ID</label>
+            <input type="text" class="form-control" readonly value="ABSPP">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="confirm()">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+      </div>
+    </div>
+</div>
+</div>
+<div class="modal-backdrop fade in"></div>

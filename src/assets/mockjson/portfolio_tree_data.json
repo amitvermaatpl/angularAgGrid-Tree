@@ -1,0 +1,239 @@
+[{
+    "id": 1,
+    "rarId": 1,
+    "name": "Saa",
+    "portfolioCode": null,
+    "currency": null,
+    "validFrom": null,
+    "validTo": null,
+    "active": "N",
+    "description": "SAA",
+    "children": [
+        {
+            "id": 2,
+            "rarId": 1,
+            "name": "test",
+            "portfolioCode": null,
+            "currency": null,
+            "validFrom": null,
+            "validTo": null,
+            "active": "T",
+            "description": "Ok",
+            "children": [
+                {
+                    "id": 4,
+                    "rarId": 4,
+                    "name": "Foreign Reserves",
+                    "portfolioCode": "Foreign Reserves",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 3
+                },
+                {
+                    "id": 5,
+                    "rarId": 5,
+                    "name": "Own Funds",
+                    "portfolioCode": "Own Funds",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 4
+                },
+                {
+                    "id": 6,
+                    "rarId": 6,
+                    "name": "Pension Funds",
+                    "portfolioCode": "Pension Funds",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 5
+                }
+            ],
+            "parentId": 1
+        },
+        {
+            "id": 3,
+            "rarId": 3,
+            "name": "Monetary Policy Portfolios",
+            "portfolioCode": "Monetary Policy Portfolios",
+            "currency": null,
+            "validFrom": "2018-01-01T00:00:00.000+0000",
+            "validTo": null,
+            "active": "Y",
+            "description": null,
+            "children": [
+                {
+                    "id": 7,
+                    "rarId": 7,
+                    "name": "Assetbacked securities purchase programme",
+                    "portfolioCode": "ABSPP",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 6
+                },
+                {
+                    "id": 8,
+                    "rarId": 8,
+                    "name": "Public sector purchase programme",
+                    "portfolioCode": "PSPP",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 7
+                },
+                {
+                    "id": 9,
+                    "rarId": 9,
+                    "name": "Corporate sector purchase programme",
+                    "portfolioCode": "CSPP",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 8
+                },
+                {
+                    "id": 10,
+                    "rarId": 10,
+                    "name": "Covered bond purchase programme",
+                    "portfolioCode": "CBPP",
+                    "currency": null,
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [
+                        {
+                            "id": 11,
+                            "rarId": 1,
+                            "name": "SAA",
+                            "portfolioCode": null,
+                            "currency": null,
+                            "validFrom": null,
+                            "validTo": null,
+                            "active": "S",
+                            "description": "Test",
+                            "children": [ ],
+                            "parentId": 202
+                        },
+                        {
+                            "id": 12,
+                            "rarId": 12,
+                            "name": "Covered bond purchase programme2",
+                            "portfolioCode": "CBPP2",
+                            "currency": null,
+                            "validFrom": "2018-01-01T00:00:00.000+0000",
+                            "validTo": null,
+                            "active": "Y",
+                            "description": null,
+                            "children": [],
+                            "parentId": 11
+                        },
+                        {
+                            "id": 13,
+                            "rarId": 13,
+                            "name": "Covered bond purchase programme3",
+                            "portfolioCode": "CBPP3",
+                            "currency": null,
+                            "validFrom": "2018-01-01T00:00:00.000+0000",
+                            "validTo": null,
+                            "active": "Y",
+                            "description": null,
+                            "children": [],
+                            "parentId": 12
+                        }
+                    ],
+                    "parentId": 9
+                }
+            ],
+            "parentId": 2
+        },
+        {
+            "id": 14,
+            "rarId": null,
+            "name": "LED Testportfolios",
+            "portfolioCode": "LED Testportfolios",
+            "currency": null,
+            "validFrom": "2018-01-01T00:00:00.000+0000",
+            "validTo": null,
+            "active": "Y",
+            "description": null,
+            "children": [
+                {
+                    "id": 15,
+                    "rarId": null,
+                    "name": "ECB EUR Portfolio",
+                    "portfolioCode": "ECB EUR Portfolio",
+                    "currency": "EUR",
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 14
+                },
+                {
+                    "id": 16,
+                    "rarId": null,
+                    "name": "ECB  EUR benchmark portfolio",
+                    "portfolioCode": "ECB  EUR benchmark portfolio",
+                    "currency": "EUR",
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": [],
+                    "parentId": 15
+                },
+                {
+                    "id": 17,
+                    "rarId": null,
+                    "name": "ECB benchmark portfolio",
+                    "portfolioCode": "ECB benchmark portfolio",
+                    "currency": "EUR",
+                    "validFrom": "2018-01-01T00:00:00.000+0000",
+                    "validTo": null,
+                    "active": "Y",
+                    "description": null,
+                    "children": null,
+                    "parentId": 16
+                }
+            ],
+            "parentId": 13
+        },
+        {
+            "id": 102,
+            "rarId": 1,
+            "name": "string",
+            "portfolioCode": "string",
+            "currency": "EUR",
+            "validFrom": "2018-07-09T00:00:00.000+0000",
+            "validTo": "2018-07-09T00:00:00.000+0000",
+            "active": "Y",
+            "description": "Description",
+            "children": null,
+            "parentId": 152
+        }
+    ],
+    "parentId": null
+}]

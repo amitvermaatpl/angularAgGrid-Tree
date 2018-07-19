@@ -1,0 +1,86 @@
+<div id="myModal" class="modal fade in" role="dialog" style="display: block;">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+      <button type="button" class="close" (click)="close()" >&times;</button>
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="modal-header-title">
+                Schedule Assessment
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">Portfolio<span>*</span></label>
+            <select class="form-control">
+              <option>Select Portfolio</option>
+              <option>FX</option>
+              <option>OF</option>
+              <option>ABSPP</option>
+              <option>PSPP</option>
+              <option>CSPP</option>
+              <option>CBPP</option>
+            </select>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">ISIN(S)</label>
+            <select class="form-control">
+              <option>All</option>
+            </select>
+            <i class="fa fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">Type of Assessment<span>*</span></label>
+            <select class="form-control">
+              <option>Select Assessment Type</option>
+              <option>eligiliblity</option>
+              <option>limit</option>
+              <option>both</option>
+            </select>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">Frequency</label>
+            <select class="form-control">
+              <option>Select Frequency</option>
+            </select>
+            <i class="fa fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="model-label">Valid From<span>*</span></label>
+            <div class="input-group">
+              <input class="form-control"  placeholder="DD/MM/YYYY" ngx-mydatepicker name="mydate1"
+                      [(ngModel)]="model1" [options]="myOptions" #dp1="ngx-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+              <span class="input-group-addon">
+                <span (click)="dp1.toggleCalendar()"><i class="fa fa-calendar-o dateicon"></i></span>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="model-label">Valid To</label>
+            <div class="input-group">
+              <input class="form-control"  placeholder="DD/MM/YYYY" ngx-mydatepicker name="mydate2"
+                      [(ngModel)]="model2" [options]="myOptions" #dp="ngx-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+              <span class="input-group-addon">
+                <span (click)="dp.toggleCalendar()"><i class="fa fa-calendar-o dateicon"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="confirm()">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="close()" >Cancel</button>
+      </div>
+    </div>
+</div>
+</div>
+<div class="modal-backdrop fade in"></div>
